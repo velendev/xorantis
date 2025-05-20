@@ -4,9 +4,13 @@
 .buttons{
   display: flex;
   justify-content: flex-end;
+  width: 100%;
   gap: 5px;
+  box-sizing: border-box;
+
   .button{
     display: flex;
+    justify-content: center;
     padding: 10px 10px;
     margin: 10px;
     border-radius: 5px;
