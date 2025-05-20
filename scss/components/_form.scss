@@ -1,1 +1,34 @@
 /* Form contatti */ 
+@use "../base/variables";
+.contact-form {
+    max-width: 600px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 20px auto;
+    background-color: variables.$crema;
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 15px;
+    border: 1px solid variables.$marrone;
+    border-radius: 5px;
+    padding: 10px;
+    background-color: variables.$crema;
+
+}
+}
+.contact-info{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: variables.$crema;
+    border-radius: 5px;
+    box-shadow: 0 0 10px variables.$marrone;
+    width: 80%;
+}
