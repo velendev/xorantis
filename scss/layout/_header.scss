@@ -46,9 +46,14 @@
       margin-right: 20px;
 
       a {
+           border: 1px solid variables.$crema;
+        border-radius: 5px;
+        color: variables.$crema;
+        background-color: variables.$marrone-dark;
         display: inline-block;
         text-decoration: none;
-        color: variables.$crema;
+        padding: 5px;
+        
         font-size: 18px;
          transition: transform 0.3s;
 

@@ -1,5 +1,5 @@
 /* Card component */ 
-
+@use "../base/variables";
 .card {
     background: white;
     border-radius: 10px;
@@ -22,4 +22,13 @@
     &:hover {
       transform: scale(1.05);
     }
+  }
+  .Xorantis{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+    border-radius: 10px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
   }

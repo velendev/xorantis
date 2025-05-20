@@ -1,8 +1,24 @@
 /* Grid system */ 
-
+ @use "../base/variables";
 .grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
     gap: 40px;
     margin: 0 auto;
+  }
+  .main-home{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    width: 97%;    
+    box-shadow: 5px 5px 5px 5px variables.$marrone;
+    background-color: variables.$crema;
+     transition: transform 0.3s ease;
+     margin-top: 20px;
+     padding: 20px;
+
+    &:hover {
+      transform: scale(1.01);
+    }
   }

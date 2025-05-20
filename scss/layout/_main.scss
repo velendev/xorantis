@@ -2,6 +2,9 @@
 
  @use '../base/variables' ;
  main{
+  box-sizing: border-box;
     background-color: variables.$crema;
     margin: 10px;
+    width: 100%;
+    padding: 20px;
   }

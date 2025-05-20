@@ -4,6 +4,7 @@
 // HAMBURGER BUTTON
 .menu-toggle {
   display: none;
+   position: absolute;
 
   &:checked ~ .navbar .nav-links {
     right: 20px;
