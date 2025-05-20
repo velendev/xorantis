@@ -8,6 +8,8 @@
   gap: 5px;
   box-sizing: border-box;
   margin-top: 10px;
+ list-style: none;
+ text-decoration: none ;  
 
   .button{
     display: flex;
@@ -18,16 +20,21 @@
     text-decoration: none;
     font-size: 16px;
     font-weight: bold;
-    color: variables.$marrone;
     border: 2px solid variables.$marrone;
     background-color: variables.$crema;
     transition: background-color 0.3s, transform 0.3s;
-
-    &:hover {
-      background-color: variables.$marrone;
-      color: variables.$crema;
-      transform: scale(1.05);
+    a{
+      display: inline-block;
+      text-decoration: none;
+      color: variables.$marrone;
     }
+    
+    &:hover {
+      background-color: variables.$crema;
+      color: variables.$crema;
+      transform: scale(1.07);
+    }
+  
   }
 }
   .btn{
