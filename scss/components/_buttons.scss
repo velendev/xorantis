@@ -1,0 +1,27 @@
+/* Bottoni */
+  @use '../base/variables' ;
+
+.buttons{
+  display: flex;
+  justify-content: flex-end;
+  gap: 5px;
+  .button{
+    display: flex;
+    padding: 10px 10px;
+    margin: 10px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: bold;
+    color: variables.$marrone;
+    border: 2px solid variables.$marrone;
+    background-color: variables.$crema;
+    transition: background-color 0.3s, transform 0.3s;
+
+    &:hover {
+      background-color: variables.$marrone;
+      color: variables.$crema;
+      transform: scale(1.05);
+    }
+  }
+}

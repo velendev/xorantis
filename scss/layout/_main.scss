@@ -1,0 +1,7 @@
+/* Main content layout */ 
+
+ @use '../base/variables' ;
+ main{
+    background-color: variables.$crema;
+    margin: 10px;
+  }

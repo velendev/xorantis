@@ -1,0 +1,61 @@
+/* Header layout */ 
+ @use '../base/variables' ;
+.main-header{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 10;
+  background: transparent;
+  padding: 10px;
+  box-sizing: border-box;
+
+}
+.logo{
+  color:  variables.$crema;
+  border: 1px solid variables.$crema;
+  padding: 12px;
+  a{
+    display: inline-block;
+    list-style: none;
+    text-decoration: none;
+    color: variables.$crema;
+    &:hover {
+      transform:scale(1.3);
+      transition: transform 0.3s;
+    }
+
+  }
+}
+.navbar{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+ 
+  margin: 0 auto;
+  padding: 0 0px;
+
+  ul{
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+
+    li {
+      margin-right: 20px;
+
+      a {
+        display: inline-block;
+        text-decoration: none;
+        color: variables.$crema;
+        font-size: 18px;
+         transition: transform 0.3s;
+
+        &:hover {
+          transform:(scale(1.3));
+        }
+      }
+    }
+  }
+}

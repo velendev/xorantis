@@ -1,0 +1,66 @@
+/* Menu toggle */ 
+// HAMBURGER BUTTON
+ @use '../base/variables' ;
+// HAMBURGER BUTTON
+.menu-toggle {
+  display: none;
+
+  &:checked ~ .navbar .nav-links {
+    right: 20px;
+    opacity: 1;
+    pointer-events: auto;
+  }
+}
+
+.menu-icon {
+  display: none;
+  font-size: 28px;
+  color: variables.$crema;
+  cursor: pointer;
+  z-index: 1001;
+}
+
+// NAV STILE MOBILE
+@media (max-width: 768px) {
+  .menu-icon {
+    display: block;
+    position: absolute;
+    top: 15px;
+    right: 20px;
+  }
+
+  .navbar {
+    position: relative;
+
+    .nav-links {
+      flex-direction: column;
+      position: absolute;
+      top: 60px;
+      
+      background: rgba(0, 0, 0, 0.95);
+      padding: 20px;
+      border-radius: 10px;
+      max-width: 200px;
+      gap: 15px;
+      opacity: 0;
+      pointer-events: none;
+      transition: all 0.3s ease;
+      z-index: 999;
+    }
+  }
+
+  .nav-links li a {
+    color: variables.$crema;
+    text-decoration: none;
+
+    &:hover {
+      transform: scale(1.1);
+      transition: transform 0.3s;
+    }
+  }
+
+  // Nascondi lista desktop
+  .navbar ul {
+    flex-direction: column;
+  }
+}

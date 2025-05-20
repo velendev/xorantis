@@ -1,0 +1,38 @@
+/* Media query mixins */ 
+ @use '../base/variables' ;
+
+@media screen and (max-width: 768px){
+    .grid {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+         .buttons{
+            display:flex;
+            flex-direction: column;
+
+        }
+        .button {
+        flex-direction: column;
+        align-items:center;
+        width: 80%;
+        margin: 5px;
+    }
+     .main-header {
+    padding: 10px 15px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.85); // o transparent se vuoi sfondo invisibile
+    width: 100%;
+    z-index: 1000;
+  }
+}
+@media screen and (max-width:1024px){
+
+
+}
+
+
+@media screen and (max-width: 678px){
+
+}
